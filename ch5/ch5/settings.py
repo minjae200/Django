@@ -56,7 +56,10 @@ ROOT_URLCONF = 'ch5.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'books/templates/books')],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'books/templates/books'),
+            os.path.join(BASE_DIR, 'ch5/templates')
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
